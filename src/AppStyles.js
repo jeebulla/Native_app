@@ -6,7 +6,8 @@ const Styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "whitesmoke",
     alignItems: "center",
-    marginTop: 30,
+    margin: 0,
+    marginHorizontal: 0,
   },
   textStyle: {
     color: "blue",

@@ -5,12 +5,14 @@ import List from "./src/List.js";
 import SectionListExample from "./src/SectionList.js";
 import VirtualizedListExample from "./src/VirtualizedLiast.js";
 import ImageExample from "./src/Image.js";
+import FeedbackForm from "./src/TextInput.js";
 
 export default function App() {
   return (
     <View style={Styles.container}>
-      {/* <ScrollView showsVerticalScrollIndicator={false}> */}
-      {/* <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
+      {/* <ScrollView showsVerticalScrollIndicator={false}>
+        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
+        <Todoist date="20" month="Nov" user="John Micheal" />
         <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
         <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
         <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
@@ -23,12 +25,16 @@ export default function App() {
         <Todoist date="3" month="Mar" user="Edet Hilary" />
         <Todoist date="3" month="Mar" user="Edet Hilary" />
         <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />*/}
-      {/* </ScrollView> */}
+        <Todoist date="3" month="Mar" user="Edet Hilary" />
+        <Todoist date="3" month="Mar" user="Edet Hilary" />
+        <Todoist date="3" month="Mar" user="Edet Hilary" />
+        <Todoist date="3" month="Mar" user="Edet Hilary" />
+      </ScrollView> */}
       {/* <List /> */}
       {/* <SectionListExample /> */}
       {/* <VirtualizedListExample /> */}
-      <ImageExample />
+      {/* <ImageExample /> */}
+      <FeedbackForm />
     </View>
   );
 }

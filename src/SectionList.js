@@ -40,13 +40,13 @@ const SectionListExample = () => {
         showsVerticalScrollIndicator={false}
         sections={DATA}
         keyExtractor={(item, index) => item + index}
+        renderSectionHeader={({ section: { title } }) => (
+          <Text style={Styles.header}>{title}</Text>
+        )}
         renderItem={({ item }) => (
           <View style={Styles.item}>
             <Text style={Styles.title}>{item}</Text>
           </View>
-        )}
-        renderSectionHeader={({ section: { title } }) => (
-          <Text style={Styles.header}>{title}</Text>
         )}
       />
     </SafeAreaView>
@@ -61,9 +61,10 @@ const Styles = StyleSheet.create({
     width: width * 0.9,
   },
   item: {
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#333",
     padding: 20,
     marginVertical: 8,
+    color: "#ffc",
   },
   header: {
     fontSize: 32,

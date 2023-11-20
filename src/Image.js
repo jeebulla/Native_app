@@ -6,9 +6,9 @@ const ImageExample = () => {
     <SafeAreaView>
       <Image
         source={require("../assets/favicon.png")}
-        style={{ width: 200, height: 200 }}
+        style={{ width: 100, height: 100 }}
         resizeMode="contain"
-        resizeMethod="scale"
+        resizeMethod="resize"
       />
     </SafeAreaView>
   );

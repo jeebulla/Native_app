@@ -19,9 +19,13 @@ const DATA = [
     title: "Others",
     id: 5,
   },
+  {
+    title: "Family-friends",
+    id: 6,
+  },
 ];
 
-const Najeeb = ({ title, id }) => {
+const Item = ({ title, id }) => {
   return (
     <View style={Styles.item}>
       <Text style={Styles.id}>{id}</Text>
@@ -34,8 +38,9 @@ const List = () => {
   return (
     <SafeAreaView style={Styles.container}>
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={DATA}
-        renderItem={({ item }) => <Najeeb title={item.title} id={item.id} />}
+        renderItem={({ item }) => <Item title={item.title} id={item.id} />}
         keyExtractor={(item) => item.id}
       />
     </SafeAreaView>
