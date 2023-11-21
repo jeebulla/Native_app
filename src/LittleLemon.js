@@ -43,7 +43,7 @@ const LittleLemon = () => {
               onChangeText={setEmail}
               style={styles.input}
               placeholder="example@gmail.com"
-              keyboardType="email"
+              keyboardType="email-address"
             />
             <TextInput
               value={password}
