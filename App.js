@@ -6,35 +6,13 @@ import SectionListExample from "./src/SectionList.js";
 import VirtualizedListExample from "./src/VirtualizedLiast.js";
 import ImageExample from "./src/Image.js";
 import FeedbackForm from "./src/TextInput.js";
+import PressableExample from "./src/Pressable.js";
+import LittleLemon from "./src/LittleLemon.js";
 
 export default function App() {
   return (
-    <View style={Styles.container}>
-      {/* <ScrollView showsVerticalScrollIndicator={false}>
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="20" month="Nov" user="John Micheal" />
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="16" month="Nov" user="Yusuf Muhammad Najeeb" />
-        <Todoist date="17" month="Nov" user="David Ezekiel" />
-        <Todoist date="18" month="Dec" user="Gladys Luke" />
-        <Todoist date="22" month="Jan" user="John Doe" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-        <Todoist date="3" month="Mar" user="Edet Hilary" />
-      </ScrollView> */}
-      {/* <List /> */}
-      {/* <SectionListExample /> */}
-      {/* <VirtualizedListExample /> */}
-      {/* <ImageExample /> */}
-      <FeedbackForm />
-    </View>
+    <SafeAreaView style={Styles.container}>
+      <LittleLemon />
+    </SafeAreaView>
   );
 }
