@@ -16,7 +16,11 @@ const LittleLemon = () => {
   const [password, setPassword] = React.useState("");
   const [showForm, setShowForm] = React.useState(true);
   return (
-    <ScrollView keyboardDismissMode="on-drag" style={styles.contents}>
+    <ScrollView
+      keyboardDismissMode="on-drag"
+      showsVerticalScrollIndicator={false}
+      style={styles.contents}
+    >
       <View style={styles.header}>
         <Text style={styles.headerText} includeFontPadding={false}>
           Little Lemon App
