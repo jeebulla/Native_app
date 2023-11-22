@@ -11,8 +11,9 @@ import LittleLemon from "./src/LittleLemon.js";
 
 export default function App() {
   return (
-    <SafeAreaView style={Styles.container}>
-      <LittleLemon />
+    <SafeAreaView>
+      {/* <LittleLemon /> */}
+      <ImageExample />
     </SafeAreaView>
   );
 }

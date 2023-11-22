@@ -5,10 +5,10 @@ import {
   Text,
   View,
   ScrollView,
-  SafeAreaView,
   Pressable,
   TextInput,
   Dimensions,
+  Image,
 } from "react-native";
 const { width, height, fontScale } = Dimensions.get("window");
 const LittleLemon = () => {
@@ -22,8 +22,12 @@ const LittleLemon = () => {
       style={styles.contents}
     >
       <View style={styles.header}>
+        <Image
+          style={styles.logo}
+          source={require("../assets/little_lemon_logo.png")}
+        />
         <Text style={styles.headerText} includeFontPadding={false}>
-          Little Lemon App
+          Your mediterranean experience bistro...
         </Text>
       </View>
 
@@ -77,14 +81,18 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: "peru",
-    padding: 30,
+    padding: 10,
     margin: 0,
     justifyContent: "center",
     alignItems: "center",
   },
+  logo: {
+    width: 400,
+    height: 100,
+    resizeMode: "contain",
+  },
   headerText: {
-    fontSize: 32,
-    fontWeight: "bold",
+    fontSize: 18,
     alignSelf: "center",
     letterSpacing: 0.4,
     textShadowColor: "#f4f4f4",
@@ -93,10 +101,9 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     width: width * 1,
-    height: height * 0.8,
+    height: height * 0.73,
     backgroundColor: "#222",
-    borderTopRightRadius: 10,
-    borderTopLeftRadius: 10,
+    borderRadius: 15,
   },
   form: {
     alignItems: "center",
@@ -140,6 +147,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 10,
     marginBottom: 10,
+    color: "#555",
   },
 });
 
