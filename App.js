@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, ScrollView, SafeAreaView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  SafeAreaView,
+  TextInput,
+} from "react-native";
 import Styles from "./src/AppStyles.js";
 import Todoist from "./src/Todoist.js";
 import List from "./src/List.js";
@@ -11,9 +18,8 @@ import LittleLemon from "./src/LittleLemon.js";
 
 export default function App() {
   return (
-    <SafeAreaView>
-      {/* <LittleLemon /> */}
-      <ImageExample />
+    <SafeAreaView style={Styles.container}>
+      <LittleLemon />
     </SafeAreaView>
   );
 }
