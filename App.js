@@ -15,10 +15,11 @@ import ImageExample from "./src/Image.js";
 import FeedbackForm from "./src/TextInput.js";
 import PressableExample from "./src/Pressable.js";
 import LittleLemon from "./src/LittleLemon.js";
+import EdetExample from "./src/Edet.js";
 
 export default function App() {
   return (
-    <SafeAreaView style={Styles.container}>
+    <SafeAreaView>
       <LittleLemon />
     </SafeAreaView>
   );
